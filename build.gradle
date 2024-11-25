@@ -2,10 +2,14 @@
 
 buildscript {
     repositories {
+        maven { url "https://repo.grails.org/grails/core/" }
+        maven { url 'https://maven.google.com' } // For Gradle < 4.0
+        google() // For Gradle 4.0+
+        mavenCentral()
         jcenter()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:1.2.3'
+        classpath 'com.android.tools.build:gradle:8.5.0'
         classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.2'
         classpath 'com.github.dcendents:android-maven-plugin:1.2'
     }
@@ -13,6 +17,15 @@ buildscript {
 
 allprojects {
     repositories {
+        maven { url "https://repo.grails.org/grails/core/" }
+        maven { url 'https://maven.google.com' } // For Gradle < 4.0
+        google() // For Gradle 4.0+
+        mavenCentral()
         jcenter()
     }
 }
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+

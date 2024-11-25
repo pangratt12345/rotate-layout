@@ -32,8 +32,10 @@ ext {
 }
 
 android {
-    compileSdkVersion 22
-    buildToolsVersion '22.0.1'
+    namespace "com.github.rongi.rotate_layout.layout"
+    compileSdk 34
+//    buildToolsVersion = "33.0.1" // new versions of gradle use default version of build tools so this instruction is unused
+
 
     sourceSets {
         main {
@@ -44,7 +46,7 @@ android {
         }
 
         // Move the tests to tests/java, tests/res, etc...
-        instrumentTest.setRoot('tests')
+//        instrumentTest.setRoot('tests')
 
         // Move the build types to build-types/<type>
         // For instance, build-types/debug/java, build-types/debug/AndroidManifest.xml, ...
@@ -62,8 +64,8 @@ android {
     }
 
     defaultConfig {
-        minSdkVersion 1
-        targetSdkVersion 22
+        minSdk 19
+        targetSdk 33
         versionCode 1
         versionName version
     }
@@ -76,5 +78,5 @@ android {
     }
 }
 
-apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle'
-apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle'
+//apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle'
+//apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle'

@@ -1,2 +1,4 @@
+rootProject.name = "Rotate Layout Example"
+
 include ':examples'
 include ':rotate-layout'
