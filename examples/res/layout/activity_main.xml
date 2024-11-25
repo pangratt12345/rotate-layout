@@ -20,7 +20,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dip"
         android:background="#BAE1FF"
-        app:angle="0">
+        app:angle="180">
 
         <include
             android:id="@+id/form1"
@@ -38,7 +38,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dip"
         android:background="#BAE1FF"
-        app:angle="75">
+        app:angle="0">
 
         <include
             android:id="@+id/form2"
@@ -56,14 +56,16 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dip"
         android:background="#BAE1FF"
-        app:angle="180">
+        app:angle="90">
 
-        <include
-            android:id="@+id/form3"
-            layout="@layout/small_form"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="5dip"/>
+        <include layout="@layout/scrollable_fragment" />
+
+<!--        <include-->
+<!--            android:id="@+id/form3"-->
+<!--            layout="@layout/small_form"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:padding="5dip"/>-->
     </com.github.rongi.rotate_layout.layout.RotateLayout>
 
 </RelativeLayout>
