@@ -1,37 +1,8 @@
 Rotate Layout
 =============
 
-A custom layout that can rotate it's view
+A fork of custom layout repository that can rotate it's view. Updated gradle version to 8.5.0
 
-[![Example](https://github.com/rongi/rotate-layout/raw/master/docs/screenshot5.png)](#Example)
-
-Usage
-=====
-
-In your layout file add
-
-```xml 
-<com.github.rongi.rotate_layout.layout.RotateLayout
-	xmlns:app="http://schemas.android.com/apk/res-auto"
-	android:layout_width="wrap_content"
-	android:layout_height="wrap_content"
-	app:angle="90">	<!-- Specify rotate angle here -->
-
-	<YourLayoutHere
-		android:layout_width="wrap_content"
-		android:layout_height="wrap_content">
-	</YourLayoutHere>
-</com.github.rongi.rotate_layout.layout.RotateLayout>
-```
-
-Voila! Your layout will be rotated 90 degrees.
-
-Download
-========
-
-```groovy
-implementation 'rongi.rotate-layout:rotate-layout:3.0.0'
-```
 
 Features
 ========

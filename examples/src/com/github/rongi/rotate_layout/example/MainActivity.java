@@ -9,7 +9,7 @@ import android.widget.Toast;
 
 import com.github.rongi.rotate_layout.layout.RotateLayout;
 
-import butterknife.ButterKnife;
+//import butterknife.ButterKnife;
 
 public class MainActivity extends Activity {
 
