@@ -13,18 +13,18 @@
         android:src="@drawable/ic_launcher"/>
 
     <Button
-        android:id="@+id/button2"
-        android:layout_width="100dip"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/image"
-        android:text="@android:string/cancel"/>
-
-    <Button
         android:id="@+id/button1"
         android:layout_width="100dip"
         android:layout_height="wrap_content"
         android:layout_below="@id/image"
         android:layout_toRightOf="@+id/button2"
         android:text="@android:string/ok"/>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="100dip"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image"
+        android:text="@android:string/cancel"/>
 
 </RelativeLayout>
